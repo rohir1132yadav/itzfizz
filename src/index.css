@@ -19,6 +19,7 @@ html,
 body {
   margin: 0;
   min-height: 100%;
+  overflow-x: hidden;
   background: radial-gradient(circle at 12% 18%, #1f3554 0%, var(--bg-0) 48%, #070c12 100%);
   font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
 }
@@ -56,6 +57,15 @@ body {
 
 .road-label {
   text-shadow: 0 2px 0 rgba(255, 255, 255, 0.08);
+}
+
+.hero-title {
+  margin-right: 0;
+  width: 100%;
+  white-space: nowrap;
+  font-size: clamp(2.2rem, 6.1vw, 5.2rem);
+  letter-spacing: clamp(0.22rem, 1.1vw, 0.72rem);
+  line-height: 1.03;
 }
 
 .car-asset {
@@ -131,6 +141,12 @@ body {
 }
 
 @media (max-width: 900px) {
+  .hero-title {
+    white-space: normal;
+    letter-spacing: clamp(0.14rem, 0.65vw, 0.36rem);
+    font-size: clamp(2rem, 10vw, 3.2rem);
+  }
+
   .metric-card {
     width: min(320px, 78vw);
     min-height: 132px;

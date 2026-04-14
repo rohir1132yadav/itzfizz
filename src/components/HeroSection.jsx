@@ -99,11 +99,11 @@ export function HeroSection() {
       className="hero-wrapper relative flex min-h-screen items-center overflow-hidden"
     >
       <div className="hero-noise" aria-hidden="true" />
-      <div className="mx-auto flex w-full max-w-6xl flex-col gap-10 px-6 py-10">
-        <div className="z-10 max-w-4xl">
+      <div className="mx-auto flex w-full max-w-7xl flex-col gap-10 px-6 py-10">
+        <div className="z-10 w-full">
           <h1
             ref={headlineRef}
-            className="mb-10 text-4xl font-semibold uppercase tracking-[0.5em] text-white sm:text-5xl lg:text-6xl"
+            className="hero-title mb-10 font-semibold uppercase text-white"
             aria-label={TITLE}
           >
             {TITLE.split("").map((char, idx) => (
