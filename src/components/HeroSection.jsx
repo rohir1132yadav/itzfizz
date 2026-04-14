@@ -99,7 +99,7 @@ export function HeroSection() {
       className="hero-wrapper relative flex min-h-screen items-center overflow-hidden"
     >
       <div className="hero-noise" aria-hidden="true" />
-      <div className="mx-auto flex w-full max-w-7xl flex-col gap-10 px-6 py-10">
+      <div className="mx-auto flex w-full max-w-7xl flex-col gap-8 px-6 py-8">
         <div className="z-10 w-full">
           <h1
             ref={headlineRef}
@@ -114,7 +114,7 @@ export function HeroSection() {
           </h1>
         </div>
 
-        <div ref={statsRef} className="metrics-wrap z-10">
+        <div ref={statsRef} className="metrics-wrap z-18">
           <div className="metrics-row metrics-top">
             {METRICS.slice(0, 2).map((metric, idx) => (
               <article key={`${metric.value}-${idx}`} className={`metric-card metric-${metric.tone}`}>
